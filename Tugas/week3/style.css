@@ -1,9 +1,10 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); */
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   /* font-family: 'Poppins', sans-serif; */
 } 
-
 
 header {
    background-color: #9c1328;
@@ -12,34 +13,25 @@ header {
    padding: 20px;
 }
 
-
-
-
 nav {
    background-color: #d73e3e;
    padding: 10px;
    text-align: center;
 }
 
-
 nav ul {
    list-style: none;
  }
-
 
 nav ul li {
    display: inline;
    margin: 0 15px;
  }
 
-
 nav ul li a {
    color: white;
    text-decoration: none;
 }
-
-
-
 
 .container {
    display: flex;
@@ -52,8 +44,55 @@ nav ul li a {
    padding: 20px;
    background-color: #ECF0F1;
    border-radius: 10px;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
- 
+
+h2 {
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+p {
+   margin-bottom: 20px;
+   font-size: 14px;
+   color: #555;
+}
+
+.form-group {
+   margin-bottom: 15px;
+}
+
+strong {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.input, .textarea, .dropdown {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background: white;
+}
+
+.textarea {
+   height: 80px;
+}
+
+.radio, .checkbox {
+   display: flex;
+   flex-direction: column;
+   gap: 20px; 
+}
+
+.radio label, .checkbox label {
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   width: 50%; 
+}
+
+
 .sidebar {
    flex: 1;
    padding: 20px;
@@ -67,26 +106,27 @@ footer {
    text-align: center;
    padding: 10px;
    background-color: #2C3E50;
-   color: white;
    margin-top: 20px;
 }
 
-
-.btn {
-   display: inline-block;
-   padding: 10px 20px;
-   background-color: #db343f;
+.footer-text{
    color: white;
-   text-decoration: none;
-   border-radius: 5px;
-   margin-top: 10px;
-   border: none;
-   cursor: pointer;
-   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.btn {
+   display: block;
+   width: 100%;
+   padding: 10px;
+   text-align: center;
+   background-color: #3498DB;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   font-weight: 600;
+   transition: background-color 0.3s;
+}
 
 .btn:hover {
    background-color: #2980B9;
-   transform: scale(1.1);
 }
