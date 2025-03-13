@@ -21,55 +21,94 @@
        </ul>
    </nav>
 
-
-    
    <div class="container">
     <section class="content">
+
         <h2>Formulir Pendaftaran</h2>
         <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+    
         <div class="form-group">
             <strong>Nama Lengkap:</strong>
-            <div class="input-box"></div>
+            <input type="text" class="input" placeholder="Masukkan nama lengkap">
         </div>
+        
         <div class="form-group">
             <strong>Email:</strong>
-            <div class="input-box"></div>
+            <input type="email" class="input" placeholder="Masukkan email">
         </div>
+        
         <div class="form-group">
             <strong>Password:</strong>
-            <div class="input-box"></div>
+            <input type="password" class="input" placeholder="Masukkan password">
         </div>
+        
         <div class="form-group">
             <strong>Jenis Kelamin:</strong>
-            <span class="radio-box"></span> Laki-laki
-            <span class="radio-box"></span> Perempuan
+            <div class="radio">
+                <label>
+                    Laki-laki
+                    <input type="radio">
+                </label>
+                <label>
+                    Perempuan
+                    <input type="radio">
+                </label>
+            </div>
         </div>
+
+        <hr>
+
         <div class="form-group">
             <strong>Hobi:</strong>
-            <span class="checkbox-box"></span> Musik
-            <span class="checkbox-box"></span> Olahraga
-            <span class="checkbox-box"></span> Membaca
+            <div class="checkbox">
+                <label>
+                    Musik
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Olahraga
+                    <input type="checkbox">
+                </label>
+                <label>
+                    Membaca
+                    <input type="checkbox">
+                </label>
+            </div>
         </div>
+
+        <hr>
+
         <div class="form-group">
             <strong>Pilih Kota:</strong>
-            <div class="dropdown-box">Jakarta</div>
+            <select class="dropdown">
+                <option>Jakarta</option>
+                <option>Moscow</option>
+                <option>Berlin</option>
+                <option>Tokyo</option>
+            </select>
         </div>
+        
         <div class="form-group">
             <strong>Pesan Tambahan:</strong>
-            <div class="textarea-box">Tulis pesan di sini...</div>
+            <textarea class="textarea" placeholder="Tulis pesan di sini..."></textarea>
         </div>
-        <div class="button-box">Kirim</div>
+        
+        <button class="btn">Kirim</button>
     </section>
+    
        <aside class="sidebar">
            <h2>Sidebar</h2>
-           <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        </aside>
    </div>
  
    <footer>
-       <p>&copy; 2024 Halaman Web Singaperbangsa. Dibuat dengan CSS.</p>
+       <p class="footer-text">&copy; 2024 Halaman Web Singaperbangsa. Dibuat dengan CSS.</p>
    </footer>
-
 
 </body>
 </html>
