@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalkulator Sederhana</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    label {
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #hasil {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+  </style>
+
+</head>
+<body>
+  <form>
+    <h1>CEK NILAI DULU YUK</h1>
+    <label for="nim">NIM:</label>
+    <input type="text" id="nim"><br><br>
+
+    <label for="nilai">Nilai:</label>
+    <input type="number" id="nilai"><br><br>
+
+    <button type="button" onclick="cekNilai()">Cek Nilaimu</button>
+  </form>
+
+  <p id="hasil"></p>
+
+  <script>
+    function cekNilai() {
+      const nim = document.getElementById("nim").value;
+      const nilai = parseInt(document.getElementById("nilai").value);
+      const hasil = document.getElementById("hasil");
+
+      if (!nim || isNaN(nilai)) {
+        hasil.textContent = "Masukkan NIM dan nilai yang valid!";
+        return;
+      }
+
+      if (nilai < 0 || nilai > 100) {
+        hasil.textContent = "Nilai tidak valid!";
+        return;
+      }
+
+      let hurufMutu = "";
+      if (nilai >= 80) hurufMutu = "A";
+      else if (nilai >= 70) hurufMutu = "B";
+      else if (nilai >= 60) hurufMutu = "C";
+      else if (nilai >= 50) hurufMutu = "D";
+      else hurufMutu = "E";
+
+      hasil.textContent = `NIM: ${nim}, Nilai: ${nilai}, Huruf Mutu: ${hurufMutu}`;
+    }
+  </script>
+</body>
+</html>
